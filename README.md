@@ -47,8 +47,8 @@ Pro spuštění projektu na vašem lokálním stroji postupujte následovně:
 
 1.  **Naklonujte repozitář:**
     ```bash
-    git clone [ODKAZ_NA_VÁŠ_GITHUB_REPOZITÁŘ]
-    cd [NÁZEV_SLOŽKY_PROJEKTU]
+    git clone [https://github.com/Dominik-G-js/Gamehub.git](https://github.com/Dominik-G-js/Gamehub.git)
+    cd Gamehub
     ```
 
 2.  **Nainstalujte závislosti:**
@@ -90,7 +90,7 @@ src/
 
 ## ✍️ Autor
 
-**[VAŠE_JMÉNO]**
+**Dominik G.**
 
-* GitHub: [@VAŠE_GITHUB_UŽIVATELSKÉ_JMÉNO](https://github.com/[VAŠE_GITHUB_UŽIVATELSKÉ_JMÉNO])
-* LinkedIn: [ODKAZ_NA_VÁŠ_LINKEDIN_PROFIL]
+* GitHub: [@Dominik-G-js](https://github.com/Dominik-G-js)
+* LinkedIn: [in/dominik-g-9aab2b225](https://www.linkedin.com/in/dominik-g-9aab2b225/)
