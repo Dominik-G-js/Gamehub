@@ -4,8 +4,6 @@ GameHub je responzivní webová aplikace postavená pomocí Reactu a TypeScriptu
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-**[Live Demo](https://[SEM_VLOŽTE_ODKAZ_NA_VAŠI_NASAZENOU_APLIKACI])**
-
 ---
 
 ## 📸 Náhled aplikace
