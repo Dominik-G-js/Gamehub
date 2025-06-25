@@ -10,9 +10,9 @@ GameHub je responzivní webová aplikace postavená pomocí Reactu a TypeScriptu
 
 ## 📸 Náhled aplikace
 
-*(Doporučuji sem vložit screenshot nebo krátký GIF, jak vaše aplikace vypadá v akci. Můžete ho nahrát přímo do GitHub repozitáře a odkázat na něj.)*
 
-![GameHub Screenshot](/[CESTA_K_VAŠEMU_SCREENSHOTU].png)
+![image](https://github.com/user-attachments/assets/f939554d-34b1-4e8b-a520-ccd512ed4396)
+
 
 ---
 
