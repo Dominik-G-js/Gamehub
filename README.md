@@ -1,69 +1,96 @@
-# React + TypeScript + Vite
+# 🎮 GameHub - Prohlížeč her
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GameHub je responzivní webová aplikace postavená pomocí Reactu a TypeScriptu, která uživatelům umožňuje procházet, vyhledávat a filtrovat videohry s využitím [RAWG Video Games Database API](https://rawg.io/apidocs). Cílem projektu bylo vytvořit čisté a intuitivní uživatelské rozhraní pro objevování nových herních titulů.
 
-Currently, two official plugins are available:
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**[Live Demo](https://[SEM_VLOŽTE_ODKAZ_NA_VAŠI_NASAZENOU_APLIKACI])**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📸 Náhled aplikace
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+*(Doporučuji sem vložit screenshot nebo krátký GIF, jak vaše aplikace vypadá v akci. Můžete ho nahrát přímo do GitHub repozitáře a odkázat na něj.)*
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+![GameHub Screenshot](/[CESTA_K_VAŠEMU_SCREENSHOTU].png)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## ✨ Klíčové funkce
+
+* **Procházení her:** Zobrazení seznamu her v přehledné mřížce s obrázkem, názvem, hodnocením a žánry.
+* **Vyhledávání v reálném čase:** Vyhledávací pole pro rychlé nalezení konkrétní hry.
+* **Pokročilé filtrování:** Možnost filtrovat hry podle žánru a platformy.
+* **Detail hry:** Samostatná stránka pro každou hru s podrobnými informacemi, jako je popis, vydavatel, platformy a screenshoty.
+* **Paginace:** Možnost listovat mezi stránkami výsledků a prozkoumat tak kompletní katalog her.
+* **Loading Skeletons:** Moderní zobrazení načítání pro lepší uživatelský zážitek.
+* **Responzivní design:** Aplikace je plně funkční a skvěle vypadá na mobilních zařízeních, tabletech i desktopech.
+
+---
+
+## 🚀 Použité technologie
+
+Tento projekt byl vytvořen s využitím moderních technologií a postupů ve front-end vývoji.
+
+* **React (s Vite)** - Pro rychlý a moderní vývoj uživatelského rozhraní.
+* **TypeScript** - Pro typovou bezpečnost a lepší škálovatelnost kódu.
+* **TailwindCSS** - Pro rychlé a efektivní stylování pomocí utility-first tříd.
+* **Zustand** - Jako minimalistický a výkonný nástroj pro globální správu stavu (filtry, stránkování).
+* **React Router** - Pro zajištění navigace a vícestránkové struktury aplikace.
+* **RAWG API** - Jako zdroj veškerých dat o videohrách.
+
+---
+
+## 🔧 Instalace a spuštění lokálně
+
+Pro spuštění projektu na vašem lokálním stroji postupujte následovně:
+
+1.  **Naklonujte repozitář:**
+    ```bash
+    git clone [ODKAZ_NA_VÁŠ_GITHUB_REPOZITÁŘ]
+    cd [NÁZEV_SLOŽKY_PROJEKTU]
+    ```
+
+2.  **Nainstalujte závislosti:**
+    ```bash
+    npm install
+    ```
+
+3.  **Nastavte API klíč:**
+    * Vytvořte v kořenovém adresáři projektu soubor `.env.local`.
+    * Do souboru vložte svůj API klíč z [rawg.io](https://rawg.io/apidocs) v následujícím formátu:
+        ```
+        VITE_RAWG_API_KEY=VAŠ_API_KLÍČ_SEM
+        ```
+
+4.  **Spusťte vývojový server:**
+    ```bash
+    npm run dev
+    ```
+    Aplikace by měla být dostupná na adrese `http://localhost:5173`.
+
+---
+
+## 📂 Struktura projektu
+
+Projekt je strukturován s důrazem na modularitu a přehlednost.
+
+```
+src/
+├── api/          # Funkce pro komunikaci s API
+├── components/   # Znovupoužitelné UI komponenty (GameCard, Navbar...)
+├── hooks/        # Vlastní React hooky (useGames, useGenres...)
+├── pages/        # Komponenty pro jednotlivé stránky (HomePage, GameDetailPage...)
+├── store/        # Logika pro Zustand store
+├── types/        # TypeScript definice typů a rozhraní
+└── App.tsx       # Hlavní komponenta a definice routování
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ✍️ Autor
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**[VAŠE_JMÉNO]**
+
+* GitHub: [@VAŠE_GITHUB_UŽIVATELSKÉ_JMÉNO](https://github.com/[VAŠE_GITHUB_UŽIVATELSKÉ_JMÉNO])
+* LinkedIn: [ODKAZ_NA_VÁŠ_LINKEDIN_PROFIL]
