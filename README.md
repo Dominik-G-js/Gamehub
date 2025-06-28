@@ -4,6 +4,8 @@ GameHub je responzivní webová aplikace postavená pomocí Reactu a TypeScriptu
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
+**[🚀 Živé Demo](https://Dominik-G-js.github.io/Gamehub/)**
+
 ---
 
 ## 📸 Náhled aplikace
@@ -73,7 +75,7 @@ Pro spuštění projektu na vašem lokálním stroji postupujte následovně:
 
 Projekt je strukturován s důrazem na modularitu a přehlednost.
 
-```
+
 src/
 ├── api/          # Funkce pro komunikaci s API
 ├── components/   # Znovupoužitelné UI komponenty (GameCard, Navbar...)
@@ -82,7 +84,7 @@ src/
 ├── store/        # Logika pro Zustand store
 ├── types/        # TypeScript definice typů a rozhraní
 └── App.tsx       # Hlavní komponenta a definice routování
-```
+
 
 ---
 
